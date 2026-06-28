@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      font-family: Inter, Arial, sans-serif;
+      color: #f8fafc;
+      background: radial-gradient(circle at 75% 25%, #f472b644, transparent 32%), linear-gradient(135deg, #0f172a, #020617);
+    }
+    nav {
+      position: fixed;
+      top: 22px;
+      display: flex;
+      gap: 12px;
+      padding: 10px;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.72);
+      border: 1px solid rgba(255,255,255,.14);
+    }
+    a {
+      color: #f8fafc;
+      padding: 10px 16px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    a:hover, .active { color: #0f172a; background: #f9a8d4; }
+    main {
+      width: min(90vw, 720px);
+      padding: 48px;
+      text-align: center;
+      border-radius: 24px;
+      background: rgba(15, 23, 42, .72);
+      border: 1px solid rgba(255,255,255,.14);
+      box-shadow: 0 28px 80px rgba(0,0,0,.4);
+    }
+    h1 { margin: 0; font-size: clamp(3rem, 8vw, 6rem); }
+    p { color: #cbd5e1; font-size: 1.15rem; line-height: 1.7; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="hello-world.html">Home</a>
+    <a href="about.html">About</a>
+    <a class="active" href="contact.html">Contact</a>
+  </nav>
+  <main>
+    <h1>Contact</h1>
+    <p>Email: hello@example.com</p>
+    <p>Send a message anytime. This page is ready to customize.</p>
+  </main>
+</body>
+</html>
