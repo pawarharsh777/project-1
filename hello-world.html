@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>i am king</title>
+  <title>Hello World</title>
   <style>
     :root {
       color-scheme: dark;
@@ -26,6 +26,32 @@
         radial-gradient(circle at 20% 20%, rgba(20, 184, 166, 0.28), transparent 34%),
         radial-gradient(circle at 78% 30%, rgba(244, 114, 182, 0.22), transparent 30%),
         linear-gradient(135deg, #0f172a 0%, #111827 46%, #020617 100%);
+    }
+
+    nav {
+      position: fixed;
+      top: 22px;
+      display: flex;
+      gap: 12px;
+      padding: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.68);
+      backdrop-filter: blur(14px);
+    }
+
+    nav a {
+      color: #f8fafc;
+      padding: 10px 16px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #0f172a;
+      background: #5eead4;
     }
 
     main {
@@ -116,6 +142,11 @@
   </style>
 </head>
 <body>
+  <nav>
+    <a class="active" href="hello-world.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
   <main>
     <p class="eyebrow">First page energy</p>
     <h1>Hello <span>World</span></h1>
